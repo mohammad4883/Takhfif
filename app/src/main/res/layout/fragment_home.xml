@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.maraton.mohammadmehdi.takhfif.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#b9f5ca"
+                android:scaleType="fitCenter"
+                android:id="@+id/imb_air"
+                android:padding="40dp"
+                android:src=""/>
+
+            <ImageButton
+                android:scaleType="fitCenter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/imb_train"
+                android:background="#fdfd8c"
+                android:padding="40dp"
+                android:src="@drawable/train" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#434343"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/airplane"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#1de8b5"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="هواپیما"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/train"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:background="#f0d801"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="قطار"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#fd8980"
+                android:padding="40dp"
+                android:id="@+id/imb_bus"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bus1" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:id="@+id/imb_ship"
+                android:background="#83fdfe"
+                android:padding="40dp"
+                android:src="@drawable/boat1" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#434343"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/bus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#fd5252"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="اتوبوس"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/ship"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#03a8f3"
+            android:fontFamily="monospace"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:text="کشتی"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</LinearLayout>
