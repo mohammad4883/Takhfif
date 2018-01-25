@@ -1,14 +1,54 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.maraton.mohammadmehdi.takhfif.Add_FriendFragment">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_weight=".75"
+        android:scaleType="fitXY"
+        android:src="@mipmap/background_invitefragm"
+
+        />
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:layout_weight="2"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/text_invite"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:text="dsafghjgfdsfjhgfds" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/text_invite"
+                android:layout_alignLeft="@+id/text_invite"
+                android:layout_alignStart="@+id/text_invite"
+                android:background="@drawable/btn_background_sign"
+                android:text="اشتراک گذاری"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
 
     </android.support.v7.widget.CardView>
 
 
-</RelativeLayout>
+</LinearLayout>
