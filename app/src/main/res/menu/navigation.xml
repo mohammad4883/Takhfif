@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/main"
+        android:title="تخفیف گذر" />
+
+    <item
+        android:id="@+id/navigation_home1"
+        android:title="دعوت از دوستان" />
+
+    <item
+        android:id="@+id/navigation_home2"
+        android:title="تبدیل امتیازات" />
+    <item
+        android:id="@+id/navigation_home4"
+        android:title="حساب کاربری" />
+    <item
+        android:id="@+id/navigation_home5"
+        android:title="تماس با بخش قنی" />
+</menu>
