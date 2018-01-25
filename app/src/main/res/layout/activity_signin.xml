@@ -9,11 +9,13 @@
     tools:context="com.maraton.mohammadmehdi.takhfif.SignInActivity">
 
     <TextView
+        android:id="@+id/welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:fontFamily="serif"
-        android:text="Welcome"
+        android:text="خوش آمدید"
+        android:layout_marginTop="10dp"
         android:textColor="#333333"
         android:textSize="30sp" />
 
@@ -22,14 +24,14 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         app:cardCornerRadius="10dp"
-        app:cardElevation="10dp"
+        app:cardElevation="5dp"
         android:id="@+id/cardView">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:padding="5dp">
+            android:padding="15dp">
 
 
             <android.support.design.widget.TextInputLayout
@@ -38,11 +40,12 @@
                 android:layout_height="wrap_content">
 
                 <EditText
+                    android:textDirection="rtl"
                     android:id="@+id/et_input_username"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableRight="@drawable/user"
-                    android:hint="Username" />
+                    android:drawableLeft="@drawable/user"
+                    android:hint="نام کاربری" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
@@ -52,10 +55,14 @@
 
                 <EditText
                     android:id="@+id/et_input_password"
+                    android:textDirection="rtl"
                     android:layout_width="match_parent"
+                    android:inputType="textPassword"
+                    android:gravity="right"
+                    android:layout_gravity="right"
                     android:layout_height="wrap_content"
-                    android:drawableRight="@drawable/locked"
-                    android:hint="Password" />
+                    android:drawableLeft="@drawable/locked"
+                    android:hint="کلمه عبور" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -66,8 +73,8 @@
                 android:layout_alignBottom="@+id/cardView"
                 android:layout_centerHorizontal="true"
                 android:layout_margin="20dp"
-                android:background="@drawable/btn_background"
-                android:text="sign in"
+                android:background="@drawable/btn_background_sign"
+                android:text="ورود"
                 android:textColor="#ffffff" />
         </LinearLayout>
 
@@ -81,7 +88,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
-        android:text="Don`t have an account?"
+        android:text="حساب کاربری ندارید؟"
         android:typeface="serif" />
 
     <Button
@@ -90,9 +97,8 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/text_below"
         android:layout_alignBottom="@+id/text_below"
-        android:layout_toEndOf="@+id/text_below"
-        android:layout_toRightOf="@+id/text_below"
-        android:text="sing up"
+        android:layout_toLeftOf="@+id/text_below"
+        android:text="ثبت نام"
         android:id="@+id/btn_signup"
         android:textColor="#000000"
         android:textSize="10sp" />

@@ -4,190 +4,121 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
     tools:context="com.maraton.mohammadmehdi.takhfif.HomeFragment">
 
-    <LinearLayout
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_weight=".5"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="horizontal">
+        android:background="#512DA8"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
 
-        <android.support.v7.widget.CardView
+        <RelativeLayout
+            android:id="@+id/toolbar_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_weight="1"
-            app:cardCornerRadius="10dp">
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbar">
 
-            <LinearLayout
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/settings" />
+
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
 
 
-                <ImageButton
-                    android:id="@+id/imb_air"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="#ee4266"
-                    android:padding="40dp"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/settings"
-                    tools:ignore="VectorDrawableCompat" />
-
-                <Button
-                    android:id="@+id/airplane"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="4"
-                    android:background="	#a53860"
-                    android:fontFamily="monospace"
-                    android:gravity="center"
-                    android:text="تنظیمات"
-                    android:textAllCaps="false"
-                    android:textColor="#ffffff"
-                    android:textSize="20sp" />
-
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_weight="1"
-            app:cardCornerRadius="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-
-                <ImageButton
-                    android:id="@+id/imb_air2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="#fed363"
-                    android:padding="40dp"
-                    android:scaleType="fitCenter"
-
-                    app:srcCompat="@drawable/question"
-                    tools:ignore="VectorDrawableCompat" />
-
-                <Button
-                    android:id="@+id/airplane2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="4"
-                    android:background="#ffcc48"
-                    android:fontFamily="monospace"
-                    android:gravity="center"
-                    android:text="پرسشنامه"
-                    android:textAllCaps="false"
-                    android:textColor="#ffffff"
-                    android:textSize="20sp" />
-
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-
-    </LinearLayout>
-
-
-    <LinearLayout
+    <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="25dp"
         android:layout_weight="1"
-        android:orientation="horizontal">
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
 
-        <android.support.v7.widget.CardView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_weight="1"
-            app:cardCornerRadius="10dp">
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_background_sign"
+            android:orientation="horizontal">
 
-            <LinearLayout
+            <ImageButton
+                style="?android:attr/borderlessButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/question" />
 
-
-                <ImageButton
-                    android:id="@+id/imb_air3"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="#fd8980"
-                    android:padding="40dp"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/ic_launcher_background"
-                    tools:ignore="VectorDrawableCompat" />
-
-                <Button
-                    android:id="@+id/airplane3"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="4"
-                    android:background="#fd5252"
-                    android:fontFamily="monospace"
-                    android:gravity="center"
-                    android:text="درباره ما"
-                    android:textAllCaps="false"
-                    android:textColor="#ffffff"
-                    android:textSize="20sp" />
-
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_weight="1"
-            app:cardCornerRadius="10dp">
-
-            <LinearLayout
+            <Button
+                android:id="@+id/airplane3"
+                style="?android:attr/borderlessButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="پرسشنامه"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </LinearLayout>
 
 
-                <ImageButton
-                    android:id="@+id/imb_air4"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="#83fdfe"
-                    android:padding="40dp"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/ic_launcher_background"
-                    tools:ignore="VectorDrawableCompat" />
-
-                <Button
-                    android:id="@+id/airplane4"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="4"
-                    android:background="#03a8f3"
-                    android:fontFamily="monospace"
-                    android:gravity="center"
-                    android:text="راهنما"
-                    android:textAllCaps="false"
-                    android:textColor="#ffffff"
-                    android:textSize="20sp" />
-
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
+    </android.support.v7.widget.CardView>
 
 
-    </LinearLayout>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_weight="1"
+        android:padding="200dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_background_sign"
+            android:orientation="horizontal">
+
+            <ImageButton
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/info" />
+
+            <Button
+                android:id="@+id/airplane2"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="راهنما"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
 </LinearLayout>

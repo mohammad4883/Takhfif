@@ -12,24 +12,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
         android:fontFamily="serif"
-        android:text="Welcome"
+        android:text="خوش آمدید"
+        android:id="@+id/welcome"
         android:textColor="#333333"
         android:textSize="30sp" />
 
     <android.support.v7.widget.CardView
+        android:id="@+id/cardView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         app:cardCornerRadius="10dp"
-        app:cardElevation="10dp"
-        android:id="@+id/cardView2">
+        android:padding="10dp"
+        app:cardElevation="5dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:padding="5dp">
+            android:padding="15dp">
 
 
             <android.support.design.widget.TextInputLayout
@@ -38,11 +41,12 @@
                 android:layout_height="wrap_content">
 
                 <EditText
+                    android:textDirection="rtl"
                     android:id="@+id/et_input_username"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableRight="@drawable/user"
-                    android:hint="Username" />
+                    android:drawableLeft="@drawable/user"
+                    android:hint="نام کاربری" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
@@ -53,11 +57,16 @@
                 <EditText
                     android:id="@+id/et_input_password"
                     android:layout_width="match_parent"
+                    android:textDirection="rtl"
+                    android:inputType="textPassword"
+                    android:gravity="right"
+                    android:layout_gravity="right"
                     android:layout_height="wrap_content"
-                    android:drawableRight="@drawable/locked"
-                    android:hint="Password" />
+                    android:drawableLeft="@drawable/locked"
+                    android:hint="کلمه عبور" />
 
             </android.support.design.widget.TextInputLayout>
+
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/input_layout_email"
                 android:layout_width="match_parent"
@@ -67,8 +76,10 @@
                     android:id="@+id/et_input_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableRight="@drawable/email"
-                    android:hint="Email" />
+                    android:textDirection="rtl"
+                    android:inputType="textEmailAddress"
+                    android:drawableLeft="@drawable/email"
+                    android:hint="آدرس الکترونیکی" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -79,8 +90,8 @@
                 android:layout_alignBottom="@+id/cardView2"
                 android:layout_centerHorizontal="true"
                 android:layout_margin="20dp"
-                android:background="@drawable/btn_background"
-                android:text="Sign Up"
+                android:background="@drawable/btn_background_sign"
+                android:text="ثبت نام"
                 android:textAllCaps="false"
                 android:textColor="#ffffff" />
         </LinearLayout>
@@ -95,19 +106,17 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
-        android:text="Already have an account?"
+        android:text="حساب دارید؟"
         android:typeface="serif" />
 
     <Button
+        android:id="@+id/btn_signin"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/text_below"
-        android:layout_alignBottom="@+id/text_below"
-        android:layout_toEndOf="@+id/text_below"
-        android:layout_toRightOf="@+id/text_below"
-        android:text="sing in"
-        android:id="@+id/btn_signin"
+        android:layout_toLeftOf="@+id/text_below"
+        android:text="ورود"
         android:textColor="#000000"
         android:textSize="10sp" />
 </RelativeLayout>

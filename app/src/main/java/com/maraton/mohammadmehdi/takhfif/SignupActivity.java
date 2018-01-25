@@ -1,20 +1,25 @@
 package com.maraton.mohammadmehdi.takhfif;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class SignupActivity extends AppCompatActivity {
     Button btn_signIn;
+    Typeface font;
     Button btn_signUp;
+    TextView tv_welcome;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
-
-
+        tv_welcome=findViewById(R.id.welcome);
+        font= Typeface.createFromAsset(getAssets(),"fonts/IRANSansWebFaNum.ttf");
+        tv_welcome.setTypeface(font);
         setTitle("Sign Up");
 
         btn_signUp=findViewById(R.id.btn_signup);
