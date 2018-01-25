@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
         android:id="@+id/navigation_home"
@@ -7,16 +8,21 @@
         android:title="تخفیف گذر" />
 
     <item
-        android:id="@+id/navigation_home1"
-        android:title="دعوت از دوستان" />
+        android:id="@+id/navigation_add_friend"
+        android:icon="@drawable/users"
+        android:title="دعوت" />
 
     <item
-        android:id="@+id/navigation_home2"
+        android:id="@+id/navigation_transferـmoney"
+        android:icon="@drawable/transfermoney"
         android:title="تبدیل امتیازات" />
     <item
-        android:id="@+id/navigation_home4"
+        android:id="@+id/navigation_user"
+        android:icon="@drawable/user"
         android:title="حساب کاربری" />
     <item
-        android:id="@+id/navigation_home5"
-        android:title="تماس با بخش قنی" />
+        android:id="@+id/navigation_chat"
+        android:icon="@drawable/chat"
+        app:showAsAction="collapseActionView"
+        android:title="تماس با بخش فنی" />
 </menu>
