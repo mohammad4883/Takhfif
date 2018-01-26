@@ -1,15 +1,254 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:padding="16dp"
     tools:context="com.maraton.mohammadmehdi.takhfif.transfer_moneyFragment">
 
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycler_view"
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_gift_chairaty"
+        android:clickable="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scrollbars="vertical" />
+        android:layout_marginBottom="10dp">
 
-</LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/im_icon_gift"
+                android:layout_toStartOf="@+id/im_icon_gift"
+                android:gravity="right"
+                android:text="کمک به خیریه"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/im_icon_gift"
+                android:layout_toStartOf="@+id/im_icon_gift"
+                android:gravity="right"
+                android:text="کمک به موسسات خیریه" />
+
+            <ImageView
+                android:id="@+id/im_icon_gift"
+                android:layout_width="50dp"
+                android:scaleType="fitCenter"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_shortcut_charity"
+                android:textColor="#ffffff" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_gift_bazar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_gift_chairaty"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/title_bazar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/im_icon_gift_bazar"
+                android:layout_toStartOf="@+id/im_icon_gift_bazar"
+                android:gravity="right"
+                android:text="کارت هدیه بازار"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/subtitle_bazar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/title_bazar"
+                android:layout_alignRight="@+id/title_bazar"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                android:text="هر 2000 امتیاز : 1000 تومان هدیه" />
+
+            <ImageView
+                android:id="@+id/im_icon_gift_bazar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/cafe_bazaar"
+                android:textColor="#ffffff" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_gift_irancell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/card_gift_bazar"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/title_irancell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/im_icon_gift_irancell"
+                android:layout_toStartOf="@+id/im_icon_gift_irancell"
+                android:gravity="right"
+                android:text="کارت شارژ ایرانسل"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/subtitle_irancell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/title_irancell"
+                android:layout_alignRight="@+id/title_irancell"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                android:text="هر 3000 امتیاز : 1000 تومان هدیه" />
+
+            <ImageView
+                android:id="@+id/im_icon_gift_irancell"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/irancell"
+                android:textColor="#ffffff" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_gift_hamrah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/card_gift_irancell"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="19dp">
+
+            <TextView
+                android:id="@+id/title_hamrah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/im_icon_gift_hamrah"
+                android:layout_toStartOf="@+id/im_icon_gift_hamrah"
+                android:gravity="right"
+                android:text="کارت شارژ همراه اول"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/subtitle_hamrah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/title_hamrah"
+                android:layout_alignRight="@+id/title_hamrah"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                android:text="هر 3000 امتیاز : 1000 تومان هدیه" />
+
+            <ImageView
+                android:id="@+id/im_icon_gift_hamrah"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/hamrah_aval"
+                android:textColor="#ffffff" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_gift_rightel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/card_gift_hamrah">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/title_rightel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/im_icon_gift_rightel"
+                android:layout_toStartOf="@+id/im_icon_gift_rightel"
+                android:gravity="right"
+                android:text="کارت شارژ رایتل"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/subtitle_rightel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/title_rightel"
+                android:layout_alignRight="@+id/title_rightel"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                android:text="هر 3000 امتیاز : 1000 تومان هدیه" />
+
+            <ImageView
+                android:id="@+id/im_icon_gift_rightel"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/rightel"
+                android:textColor="#ffffff" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
